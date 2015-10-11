@@ -3,7 +3,6 @@ var arrNew = [];
 
 // Function to return combination of numbers X & Y as per below comment
 // [2, 2, 2, 3, 2, 4, 3, 2, 3, 3, 3, 4, 4, 2, 4, 3, 4, 4]
-
 function getCombinations(numberX, numberY) {
   var diff = numberY - numberX;
   for(var x = 0; x < diff + 1; x++) {
@@ -20,7 +19,6 @@ getValues();
 
 // Function to return array of values as per below comment
 // [4, 8, 16, 9, 27, 81, 16, 64, 256]
-
 function getValues() {
   for(var i = 0; i < arr.length; i += 2) {
     var el = Math.pow(arr[i], arr[i + 1]);
@@ -34,7 +32,6 @@ function getValues() {
 
 // Function to only get distinct numbers in an array
 // [4, 8, 9, 16, 27, 64, 81, 256]
-
 function getDistinct() {
   for(var i = 0; i < arrNew.length; i++) {
     if(arrNew[i] === arrNew[i + 1]) {
