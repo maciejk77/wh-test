@@ -10,8 +10,7 @@ function getCombinations(numberX, numberY) {
     
     for(var y = 0; y < diff + 1; y++) {
       var ely = numberX + y
-      arr.push(elx)
-      arr.push(ely)
+      arr.push(elx, ely);
     }
   }
 getValues();
